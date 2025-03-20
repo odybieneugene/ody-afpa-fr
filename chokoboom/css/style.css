@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  background-color: #50d4d2;
+  margin: 0 20% 5% 20%;
+  flex-flow: row;
+}
+
+body {
+  background-color: aqua;
+  border-radius: 10px;
+  justify-content: center;
+  padding: auto;
+}
+main img {
+  width: 100%;
+  border-radius: 10px;
+  border-color: aliceblue;
+  margin-top: 10px;
+}
+
+main aside {
+  background-color: #fff;
+  width: 100%;
+  padding: 30px;
+  font-size: 30px;
+  text-align: justify;
+}
+
+h2 {
+  background-color: #6e4f4f;
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.container-header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #754242;
+  width: 100%;
+  margin: 0 20%;
+  padding: 10px 0;
+  transition: 0.8 ease;
+}
+
+.container-header nav a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 1.8rem;
+ 
+}
+.container-header nav :hover {
+  background-color: #a79189;
+  font-size: 36px;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: ease-in-out;
+  justify-content: center;
+  margin: 0 20%;
+  flex-wrap: nowrap;
+}
+.container section {
+  padding: 3%;
+  font-size: 30px;
+  text-align: justify;
+}
+
+
+/*Affichage Mobile 600px*/
+
+@media (max-width: 600px) {
+  .container aside {
+    display: none;
+  }
+  .container-header nav {
+    display: block;
+    font-size: 1rem;
+  }
+  .container-header nav a {
+    font-size: 15px;
+    justify-content: center;
+    padding: 1px;
+    margin: 1px;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .container-header img{
+    width: 150px;
+  }
+}
+/* Affichage Tablette */
+
+@media (max-width: 1023px){
+  .container{
+    display: block;
+  }
+  main aside{
+   width: fit-content;
+  }
+  .container-header nav a {
+    font-size: 20px;
+    justify-content: center;
+    padding: 1px;
+    margin: 1px;
+  }
+  h2{
+    font-size: 2rem;
+  }
+}

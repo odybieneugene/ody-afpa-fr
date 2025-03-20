@@ -1,0 +1,8 @@
+.red{
+    background-color: rgb(223, 220, 228);
+    height: 600px;
+}
+.bgc{
+    background-color: rgb(175, 206, 241);
+    border: 2px solid rgb(47, 5, 198);
+}

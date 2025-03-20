@@ -1,0 +1,88 @@
+@font-face {    /* Integration du FONT The Dark*/
+    font-family: "TheDark";
+    src: url('../Font/TheDark.ttf') format('truetype');
+}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    /*----____                   _                                                                                              _                       _                    _       _   _                                
+ | __ )    __ _    ___  | | __   __ _   _ __    ___    _   _   _ __      _ __    ___    _   _    __ _    ___      ___  | |_     _ __     ___   (_)  _ __      ___   | |__   | | (_)   __ _   _   _    ___         
+ |  _ \   / _` |  / __| | |/ /  / _` | | '__|  / _ \  | | | | | '_ \    | '__|  / _ \  | | | |  / _` |  / _ \    / _ \ | __|   | '_ \   / _ \  | | | '__|    / _ \  | '_ \  | | | |  / _` | | | | |  / _ \  _____ 
+ | |_) | | (_| | | (__  |   <  | (_| | | |    | (_) | | |_| | | | | |   | |    | (_) | | |_| | | (_| | |  __/   |  __/ | |_    | | | | | (_) | | | | |      | (_) | | |_) | | | | | | (_| | | |_| | |  __/ |_____|
+ |____/   \__,_|  \___| |_|\_\  \__, | |_|     \___/   \__,_| |_| |_|   |_|     \___/   \__,_|  \__, |  \___|    \___|  \__|   |_| |_|  \___/  |_| |_|       \___/  |_.__/  |_| |_|  \__, |  \__,_|  \___|        
+                                |___/                                                           |___/                                                                                   |_|----*/
+                                body {
+                                    height: 100%;
+                             background: linear-gradient(135deg,
+                                black 20%, /* Noir jusqu'à 20% */ 
+                                red 20% 40%,  /* Début et fin de la 1ere barre rouge*/
+                                black 40% 60%,
+                                red 60% 80%, /* Début et fin de la 1ere barre rouge*/
+                                black 80%
+                              );                            
+
+
+    /*██╗░░██╗███████╗░█████╗░██████╗░███████╗██████╗░
+██║░░██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗
+███████║█████╗░░███████║██║░░██║█████╗░░██████╔╝
+██╔══██║██╔══╝░░██╔══██║██║░░██║██╔══╝░░██╔══██╗
+██║░░██║███████╗██║░░██║██████╔╝███████╗██║░░██║
+╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝*/
+    header>nav {
+
+        width: 50% !important;
+        background-color: transparent;
+    }
+
+   .navbar-nav {
+        color: red !important;
+    }
+
+    .main .navbar-brand {
+        font-size: 3rem;
+        font-family: "TheDark";
+        color: white;
+
+    }
+
+    /*pour l'eclair i */
+    .fa-bolt-lightning {
+        color: rgb(255, 0, 0);
+        text-shadow: 2px 2px 3px black;
+
+    }
+
+    header {
+        text-align: center;
+        font-family: "TheDark";
+    
+    }
+
+    #team h3, #disco h3, #concert h3, #contact h3 { /*aplication de la couleur WHITE et le FONT The Dark dans les titre des section */
+        text-align: center;
+        color: aliceblue;
+        font-family: "TheDark";
+        src: url('../Font/TheDark.ttf');
+    }
+
+
+/* fit des images de la section TEAM */ 
+#team img{
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
+    } 
+
+    /*Discographie*/
+    #disco .button {
+        align-items: end !important;
+    }
+
+ /* discography botton */
+    form .btn {
+        box-shadow: 1px black;
+    }

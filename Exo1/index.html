@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 1</title>
+</head>
+<body>
+    <section align="center">
+    <header> <h1> Exercices HTML </h1></header>
+    <h2>Un tableau en HTML</h2>
+    <table border="1" , align="center">
+        <thead>
+            <tr>Langage/Framework</tr>
+            <tr>Niveau</tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>BootStrap</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>PHP</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Symfony</td>
+                <td><input type="number"></td>
+            </tr>
+        </tbody>
+    </table>
+    </section>  
+
+    <!--La deuxieme exercise de petit formulaire-->
+    <section align="center">
+        <h2> Le Petit Formulaire </h2>
+<form name="petitform" align="center" method="post">
+          <fieldset>
+           <p>  <label for="name">Pseudo</label>
+                <input type="text" placeholder="Saisie de pseudo" id="Pseudo" maxlength="35">
+           </p>
+
+           <p>  <label for="name">Mot de paase</label>
+                <input type="password" placeholder="Saisie de mot de passe" id="password" maxlength="8">
+           </p>
+            
+           <p>
+                <label for="name">E-mail</label>
+                <input type="email" placeholder="Saisie de l'email" id="email" maxlength="100">
+
+            <p>
+                <label for="nature-selected">Nature</label>
+                <select name="nature" id="nature-selected">
+                    <option value="">Choisie une nature</option>
+                    <option value="edit">Editeur</option>
+                    <option value="read">Lecteur</option>
+                    <option value="guest">Inviter</option>
+
+
+                </select>
+            </p>
+            <input type="submit" value="Valider">
+            <input type="reset" value="Annuler">
+        
+            </fieldset> 
+</form>    
+<br>
+<table border="1" align="center">
+    <tbody>
+        <tr>
+            <td><img src="/img/Yoda_SWSB.jpg" width="200px"></td>
+            <td>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit.
+                 Enim, suscipit quos saepe consectetur non ad,
+                  aut obcaecati numquam porro sunt !</td>
+        </tr>
+    </tbody>
+</table>
+    </section>
+
+<!--L'exercises du carabaffe-->
+
+<section name="carabaffe" align="center">
+        <table>
+            <tr align="left">
+                <td> <img src="/img/Carabaffe.png" alt=""> </td>
+                <td> <p>
+                    Il est onsidere comme un symbole de longevite
+                    On reconnait les specimens les plus ages a la mousse qui pousse 
+                    sur leur carapace.  
+                    <h4>Evolution</h4>
+                    </p>
+                    <a href="https://www.pokemon.com/fr/pokedex/carapuce"> <img src="/img/Carabaffe.png" width="150px" alt="Carabaffe"></a>
+                    <img src="/img/Sign_superieur.png" width="100px" alt="signe superieur">
+                  <a href="https://www.pokemon.com/fr/pokedex/tortank"> <img src="/img/Carapuce.png" width="150px" alt="carapuce"></a> 
+                    <img src="/img/Sign_superieur.png" width="100px" alt="signe superieur">
+                    <a href="https://www.pokemon.com/fr/pokedex/carapuce"> <img src="/img/Carabaffe.png" width="150px" alt="carabaffe"></a> 
+                
+                </td>
+            </tr>
+            <br>
+        </table>       
+</section>
+
+<!--A partir de la on a les listes-->  
+<section name="exercise4">
+<h3>Statistiques de base</h3>
+<p>
+    <ul>
+        <li> PV (4)</li>
+        <li>Attaque (4)</li>
+        <li>Defenseur (5)</li>
+        <li>Attaque Speciale (4)</li>
+        <li>Defense Speciale (5)</li>
+        <li>Vitesse (4)</li>
+    </ul>
+</p>
+<p>
+    <h3>Informations</h3>
+    <ol>
+        <li>Taille (1.om)</li>
+        <li>Poids (22.5kg)</li>
+        <li>Sexe &#x26A5;</li>
+        <li>Categorie (Tortue)</li>
+    </ol>
+</p>
+</section>
+<!--L'exercice (4) de la carte de Paris et Lile-->
+
+<section name="carte">
+
+
+    <h1> Cliquer sur la ville de votre choix</h1>
+    <p><img src="img/carte_france.gif" usemap="#carte" border="no" alt="France"
+    />
+    <map name="carte">
+    <area alt="Lille" shape="rect" href="pagelille.html"
+    coords="200,12,258,33" />
+    <area alt="Paris" shape="rect" href="pageparis.html"
+    coords="198,86,253,96" />
+    </map></p>
+</section>
+<!--Exercises des videos-->
+<section name="exo5">
+<h4>Appel d'une video local</h4>
+<embed src="/img/Bip_bip_Le grand saut.mp4" type="">
+
+ <h4>Appel d'une video sur le web</h4>  
+ <iframe src="https://www.youtube.com/embed/F_3lV_gNk3M?si=HM9S8hB2LCbOUxrh" title="YouTube video player" frameborder="0"></iframe> 
+
+ <!--L'exercise de l'API (Controle, Validation, Formulaire)-->
+ <section name="API_Html5">
+ <h2>API HTML5 de Controle de Validation de Formulaire  </h2>
+<form action="required" align="center">
+   <p> <label for="last_name">Nom</label>
+       <input type="text" name="last_name" id="last_name" required />
+  <button>Soumettre</button>>
+   </p>
+
+   <p> <label for="first_name">Prenom</label>
+       <input type="text" name="first_name" id="first_name" required>
+  </p>
+
+  <p> <label for="mail">E-mail</label>
+    <input type="email" name="email" id="mail" required>
+  </p>
+
+  <p>
+    <label for="tel">Telephone</label>
+    <input type="number" name="tel" id="tel" maxlength="12" required>
+  </p>
+
+  <p>
+    <label for="message">Message</label>
+    <textarea name="message" id="message" minlength="10" maxlength="150" required>Saisie votre message...
+    </textarea>
+
+          </p>
+
+  <input type="submit" value="Valider">
+  <input type="reset" value="Annuler">
+
+    </form>
+
+</section>
+
+</section>
+</body>
+</html>

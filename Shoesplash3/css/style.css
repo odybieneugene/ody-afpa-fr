@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  /* !!!! Ta présentation est bien mieux sans cette directive qui porte sur la balise body !!! */
+  /* padding: 0 15%; */
+  background-color: #f2f2f2;
+}
+
+main img {
+  width: 100%;
+}
+
+.container {
+  /* !!!! C'est maladroit !!!!! */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* padding: 1%; */
+  font-size: 3rem;
+  margin: 0 auto;
+}
+
+/*------------------------------
+              HEADER
+ -------------------------------*/
+
+.topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #f6d4f5;
+  padding: 1%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#cart {
+  /* flex-direction: row; */
+  display: flex;
+  position: absolute;
+  /* top: 3%; */
+  top: 80px;
+  right: 20px;
+  margin-right: 15%;
+  color: #000000;
+  padding: 1%;
+  font-size: 2.5rem;
+  cursor: pointer;
+  
+  /* border: 3px solid red; */
+ 
+}
+
+/* ???????????? Il n'y a pas de a dans ton conteneur flexiple #cart ???? */
+#cart a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 3rem;
+  transition: all 0.1s ease 0s;
+}
+
+#cart i {
+  color: #eaadf4;
+  padding: 0 auto;
+  margin: 0 10px;
+  /* Ta size de police est trop importante !!!! */
+  /* font-size: 5rem; */
+}
+
+header .container > nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* La propriété flex basis n'opère que sur les enfants flexibles, pas sur un parent Cf. Le Memo FlexBox*/
+  /* flex-basis: 70%; */
+  margin: 0 auto;
+  background-color: #f6d4f5;
+  padding: 1%;
+  font-size: 3rem;
+  justify-items: center;
+}
+
+header .container > nav a {
+  color: #000000;
+  text-decoration: none;
+  justify-content: center;
+  padding: 1%;
+  font-size: 3rem;
+  transition: all 0.1s ease 0s;
+  text-align: center;
+}
+
+header .container > nav a:hover {
+  background-color: rgb(53, 50, 50);
+  color: white;
+  transition: all 0.1s ease 0s;
+}
+
+/*.clear::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+   }  */
+
+header {
+  background-color: #f6d4f5;
+}
+
+header .container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header .container a {
+  width: 100%;
+  height: 25%;
+  background-color: #f6d4f5;
+  font-size: 2.8rem;
+}
+
+/*------------------------------
+              MAIN
+ -------------------------------*/
+#slider {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 2% 0;
+}
+
+#slider h2 {
+  background: #f6d4f5;
+  font-size: 1.5rem;
+  /* Taille de police trop importante !!! */
+  /* font-size: 2.5rem; */
+  float: left;
+  /* Si tu utilises un flottant ici, la meilleur des choses a faire 
+  c'est de laisser le positionnement par défaut, ainsi ton titre h2
+  qui est de type block se trouvera au dessus de l'image) */
+  /* position: absolute; */
+  margin: 2%;
+  padding: 1%;
+}
+
+#slider,
+#select,
+#new,
+#best #crush {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/*-------Select-------*/
+#select {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: center;
+}
+
+#select h1 {
+  /* Il faut donner une taille de police raisonnable à ton titre h1 */
+  font-size: 1.8rem;
+  flex-basis: 100%;
+}
+
+#select h3 {
+  /* font-size: 2rem; */
+  font-size: 1rem;
+  font-family: courgette;
+  text-align: center;
+}
+
+.escarpin {
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+}
+
+#select .escarpin:hover {
+  transform: scale(1.1);
+}
+
+.container .escarpin img {
+  /*width: 300px;*/
+  /* Il faut réduire la taille de tes photos ici !!!! */
+  width: 150px;
+}
+
+#select,
+#news {
+  width: 90%;
+  height: 100%;
+  margin: 2% 0;
+  display: flex;
+  /* padding: 20px; */
+  justify-content: space-around;
+  gap: 15px;
+  background-color: #ffff;
+}
+/* Pourquoi tu donnes au même selecteur des directives CSS contradictoires ??? */
+#news {
+  /*-------------les news--------------------*/
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  size: fit-content;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  margin: 5%;
+  padding: 20px;
+}
+
+#news img:hover {
+  transform: scale(1.1);
+}
+
+#news h2 {
+  /*------------titre news---------------*/
+  font-size: 3rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#news h3 {
+  font-size: 2rem;
+  font-family: courgette;
+}
+
+#news img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#new h2 {
+  width: 100%;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #eb34c4;
+  padding: 5% 0;
+}
+
+#best h2 {
+  width: 100%;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #93ba45;
+  padding: 5% 0;
+}
+
+#crush h2 {
+  width: 100%;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #0398b0;
+  padding: 5% 0;
+}
+
+#new,
+#best,
+#crush {
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+/*------------------------------
+              FOOTER
+ -------------------------------*/
+
+#info {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  background-color: #e3ade1;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#info article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1% 0;
+}
+
+#info article:hover {
+  background-color: #f6d4f5;
+}
+
+#info article {
+  display: flex;
+  flex-direction: column;
+}
+
+#bottombar {
+  display: flex;
+  height: 25%;
+  justify-content: space-around;
+  background-color: #f6d4f5;
+  text-align: center;
+  padding: 2%;
+  font-size: 2.5rem;
+}
+
+#bottombar article ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*-------------------------------`
+           MEDIA QUERIES
+     La partie Responsive Mobile
+ -------------------------------*/
+/* 1550px c'est beaucoup trop important, de ce fait seules tes propriétés CSS
+ de ta Media Query s'appliquent, du coup tous tes éléments sont toujours tous en colonne !!! */
+/*@media screen and (max-width: 1550px) {*/
+@media screen and (max-width: 740px) {
+  /*--<><><>-HEADER-<><><>--*/
+  #topbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #f6d4f5;
+    padding: 1%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #cart {
+    display: none;
+  }
+
+  header .container > nav {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0%;
+    text-align: center;
+  }
+
+  header .container > nav a {
+    width: 100%;
+    height: 25%;
+    background-color: #f6d4f5;
+  }
+
+  header .container > nav:hover {
+    color: white;
+    transition: all 0.1s ease 0s;
+  }
+
+  /*--<><><>-SLIDER-<><><>--*/
+  #slider {
+    flex-direction: column;
+  }
+
+  #slider h2 {
+    background: #f6d4f5;
+    font-size: 1.5rem;
+  }
+
+  #select h1 {
+    flex-basis: 100%;
+  }
+
+  /*--<><><>-SELECT-<><><>--*/
+  #select {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #select h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  /*--<><><>-NEWS-<><><>--*/
+  #news {
+    flex-direction: column;
+  }
+
+  /*--<><><>-INFO-<><><>--*/
+  #info {
+    flex-direction: column;
+  }
+
+  /*--<><><>-BOTTOMBAR-<><><>--*/
+  #bottombar {
+    flex-direction: column;
+  }
+}

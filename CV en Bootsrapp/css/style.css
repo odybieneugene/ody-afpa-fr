@@ -1,0 +1,36 @@
+/*
+    █▀█ ▄▄▄ ▄▄▄ ▄▄▄ ▄▄ ▄▄█ ▄▄░ ▄▄▄ ▄▄▄
+    █▀█ █▄▄ █▄▄ █▄█ █░ █▄█ ██▄ █▄█ █░█
+    ░░░ ░░░ ░░░ ░░░ ░░ ░░░ ░░░ ░░░ ░░░*/
+section {
+    background-color: #97d2fa !important;
+}
+
+.button-costum{
+    background-color: #bc999d !important;
+    width: 100%;
+    text-align: center;
+}
+
+.accordion-item {
+   background-color: #ffffff0a;
+   margin: 10px;
+   border: 0;  
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  background-image: unset !important;
+} 
+
+.accordion-header{
+    text-align: center !important;
+}
+
+/*
+█▀█ ░▄▄ ▀ ▄▄█ ▄▄░
+█▀█ ▄█░ █ █▄█ ██▄
+░░░ ░░░ ░ ░░░ ░░░*/
+aside{
+    background-color:#e1f0f7 !important;
+}
